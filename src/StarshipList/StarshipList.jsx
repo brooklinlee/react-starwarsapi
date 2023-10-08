@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import { getAllStarships } from '../services/sw-api'
 import { Link } from 'react-router-dom'
 
-import StarshipDetails from '../StarshipDetails/StarshipDetails'
+// import StarshipDetails from '../StarshipDetails/StarshipDetails'
 
 const StarshipList = () => {
   const [allStarships, setAllStarships] = useState([])
@@ -19,6 +19,7 @@ const StarshipList = () => {
 
   return (  
     <>
+    <h1>STAR WARS STARSHIPS</h1>
       {allStarships.map((starship, idx) => (
         <div key={idx}>
           {starship.name}
@@ -26,7 +27,7 @@ const StarshipList = () => {
         </div>
         ))  
       }
-      <StarshipDetails />
+      {/* <StarshipDetails /> */}
     </>
   )
 }
