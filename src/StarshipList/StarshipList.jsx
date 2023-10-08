@@ -1,5 +1,8 @@
 import { useState, useEffect } from 'react'
 import { getAllStarships } from '../services/sw-api'
+import { Link } from 'react-router-dom'
+
+import StarshipDetails from '../StarshipDetails/StarshipDetails'
 
 const StarshipList = () => {
   const [allStarships, setAllStarships] = useState([])
@@ -18,10 +21,12 @@ const StarshipList = () => {
     <>
       {allStarships.map((starship, idx) => (
         <div key={idx}>
-          <h4>{starship.name}</h4>
+          {starship.name}
+          {/* <Link to={`/starships/${starship._id}`}>{starship.name}</Link> */}
         </div>
         ))  
       }
+      <StarshipDetails />
     </>
   )
 }
