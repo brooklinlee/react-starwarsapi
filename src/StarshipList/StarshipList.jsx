@@ -22,7 +22,7 @@ const StarshipList = () => {
       {allStarships.map((starship, idx) => (
         <div key={idx}>
           {starship.name}
-          {/* <Link to={`/starships/${starship._id}`}>{starship.name}</Link> */}
+          <Link to={`/starships/${starship._id}`}>{starship.name}</Link>
         </div>
         ))  
       }
