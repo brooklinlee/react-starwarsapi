@@ -18,7 +18,7 @@ useEffect(() => {
   if (!starshipDetails.name) return <h1>Loading ...</h1>
 
   return (  
-    <>
+    <main className="star-details">
     <h4>
       Name: {starshipDetails.name}
     </h4>
@@ -26,7 +26,7 @@ useEffect(() => {
       Model: {starshipDetails.model}
     </h4>
     <Link to={`/starships/`}>RETURN</Link>
-    </>
+    </main>
   )
 }
 

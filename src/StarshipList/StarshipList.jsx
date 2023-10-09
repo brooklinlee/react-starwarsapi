@@ -18,16 +18,14 @@ const StarshipList = () => {
   if(!allStarships.length) return <h1>Loading all Starships ...</h1>
 
   return (  
-    <>
-    <h1>STAR WARS STARSHIPS</h1>
+    <main className='star-list'>
       {allStarships.map((starship, id) => (
-        <div key={id}>
+        <div className='star-card' key={id}>
           <Link to={`/starships/${starship.url.split('/').slice(-2, -1)}`}>{starship.name}</Link>
-
         </div>
         ))  
       }
-    </>
+    </main>
   )
 }
 
