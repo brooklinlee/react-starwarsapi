@@ -68,7 +68,8 @@ nav > a {
 
 .star-details {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .detail-card {
@@ -79,11 +80,18 @@ nav > a {
   width: 600px;
   height: 300px;
   margin: 10%;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  padding-left: 4%;
 }
 
 .detail-card > a {
   color: #385B4F;
   font-weight: bold;
+  margin-top: 4%;
+}
+
+.underline {
+  text-decoration: underline;
 }

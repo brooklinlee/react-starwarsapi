@@ -21,10 +21,10 @@ useEffect(() => {
     <main className="star-details">
       <div className="detail-card"> 
         <h4>
-        NAME: {starshipDetails.name}
+        NAME: <span className="underline">{starshipDetails.name}</span>
       </h4>
       <h4>
-        MODEL: {starshipDetails.model}
+        MODEL: <span className="underline">{starshipDetails.model}</span>
       </h4>
       <Link to={`/starships/`}>RETURN</Link>
     </div>
