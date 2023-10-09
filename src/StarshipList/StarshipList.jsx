@@ -15,7 +15,7 @@ const StarshipList = () => {
     fetchStarshipData()
   }, [])
 
-  if(!allStarships.length) return <h1>Loading all Starships ...</h1>
+  if(!allStarships.length) return <h1 className='centered-conditional'>Loading all Starships ...</h1>
 
   return (  
     <main className='star-list'>

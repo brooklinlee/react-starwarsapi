@@ -24,7 +24,7 @@ a {
   color: whitesmoke;
   border-bottom: 1px solid transparent;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 a:visited {
@@ -33,15 +33,57 @@ a:visited {
 
 nav > a {
   color: #385B4F;
-  font-size: 18px;
+  font-size: 32px;
   font-weight: bold;
 }
 
-.link-container {
-  padding: 4px 12px;
+.star-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 4%;
 }
 
-.subsection {
-  padding-left: 24px;
+.star-card{
+  display: flex;
+  background-color: whitesmoke;
+  border-radius: 8px;
+  width: 200px;
+  height: 100px;
+  margin: 2%;
+  justify-content: center;
+  align-items: center;
 }
 
+.star-card > a {
+  color: #385B4F;
+  padding: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.centered-conditional {
+  text-align: center;
+}
+
+.star-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.detail-card {
+  display: flex;
+  background-color: whitesmoke;
+  color: #385B4F;
+  border-radius: 8px;
+  width: 600px;
+  height: 300px;
+  margin: 10%;
+  justify-content: center;
+  align-items: center;
+}
+
+.detail-card > a {
+  color: #385B4F;
+  font-weight: bold;
+}

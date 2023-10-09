@@ -15,17 +15,19 @@ useEffect(() => {
   fetchStarshipDetails()
 }, [starshipId])
 
-  if (!starshipDetails.name) return <h1>Loading ...</h1>
+  if (!starshipDetails.name) return <h1 className='centered-conditional'>Loading ...</h1>
 
   return (  
     <main className="star-details">
-    <h4>
-      Name: {starshipDetails.name}
-    </h4>
-    <h4>
-      Model: {starshipDetails.model}
-    </h4>
-    <Link to={`/starships/`}>RETURN</Link>
+      <div className="detail-card"> 
+        <h4>
+        NAME: {starshipDetails.name}
+      </h4>
+      <h4>
+        MODEL: {starshipDetails.model}
+      </h4>
+      <Link to={`/starships/`}>RETURN</Link>
+    </div>
     </main>
   )
 }
