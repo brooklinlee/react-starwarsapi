@@ -20,14 +20,13 @@ const StarshipList = () => {
   return (  
     <>
     <h1>STAR WARS STARSHIPS</h1>
-      {allStarships.map((starship, idx) => (
-        <div key={idx}>
-          {starship.name}
-          <Link to={`/starships/${starship._id}`}>{starship.name}</Link>
+      {allStarships.map((starship, id) => (
+        <div key={id}>
+          <Link to={`/starships/${starship.url.split('/').slice(-2, -1)}`}>{starship.name}</Link>
+
         </div>
         ))  
       }
-      {/* <StarshipDetails /> */}
     </>
   )
 }
